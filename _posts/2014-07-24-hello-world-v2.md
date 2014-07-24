@@ -4,15 +4,13 @@ title: 你好，世界 之 markdown 版
 categories: [Test, Test2]
 tags: [markdown, git, github, jekyll]
 ---
-{{ page.title }}
-====================
-
 我的第一篇用 markdown 写成的文章
 --------------------------------
 
 > 这是引用的文字
 >
 > 在 __flw__ 的大作中提到：
+>
 > 我已开博，感觉良好
 
 ### 下面是一个列表
