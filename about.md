@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 关于我
-script:
+script: |
     $('ul.nav a[href="/"]').parent().removeClass("active");
     $('ul.nav a[href="/about.html"]').parent().addClass("active");
 ---
