@@ -1,13 +1,14 @@
 ---
 layout: default
 title: 你好，世界 之 markdown 版
-categories: [Test]
+categories: [Test, Test2]
 tags: [markdown, git, github, jekyll]
 ---
 {{ page.title }}
 ====================
 
 我的第一篇用 markdown 写成的文章
+--------------------------------
 
 > 这是引用的文字
 >
