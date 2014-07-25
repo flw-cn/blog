@@ -14,9 +14,9 @@
                 <li><a href="/about.html">关于</a></li>
             </ul>
             <h3 class="text-muted">{{ site.name }}</h3>
+            <p>本文发表与 {{ page.date | date_to_string }}</p>
         </div>
         <h1 class="text-muted">{{ page.title }}</h1>
-        <p>{{ page.date | date_to_string }}</p>
         {{ content }}
 {% include footer.html site=site page=page %}
     </div>
