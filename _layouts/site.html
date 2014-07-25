@@ -3,7 +3,6 @@
 <head>
 {% include html-head-meta.html %}
 <title>{{ page.title }}</title>
-{% include footer.html %}
 </head>
 <body>
     <div class="container">
@@ -16,7 +15,7 @@
             <h3 class="text-muted">{{ site.name }}</h3>
         </div>
         {{ content }}
-{% include footer.html %}
+{% include html-head-resource.html %}
     </div>
 </body>
 </html>
