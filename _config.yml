@@ -1,8 +1,7 @@
 name: "flw 的工具箱"
 baseurl: ""
 defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
+    - scope:
+        path: ""
+      values:
+        layout: default
