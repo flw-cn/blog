@@ -16,7 +16,8 @@
             <h3 class="text-muted">{{ site.name }}</h3>
         </div>
         {{ content }}
-        {% include footer.html %}
+        {% include footer.html site=site page=page %}
     </div>
+    {% include tail.html %}
 </body>
 </html>
