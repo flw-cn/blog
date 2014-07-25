@@ -2,7 +2,7 @@ name: "flw 的工具箱"
 baseurl: ""
 defaults:
     - scope:
-        path: "/"
+        path: ""
         type: page
       values:
         layout: site
