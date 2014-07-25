@@ -1,6 +1,7 @@
 ---
+layout: article
 title: 你好，世界 之 markdown 版
-categories: [Test, Test2]
+categories: [test]
 tags: [markdown, git, github, jekyll]
 ---
 我的第一篇用 markdown 写成的文章
