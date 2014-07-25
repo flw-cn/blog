@@ -1,5 +1,5 @@
 name: "flw 的工具箱"
-site: "只有干货"
+ad_message: "只有干货"
 baseurl: ""
 defaults:
     - scope:
