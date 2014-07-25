@@ -1,2 +1,13 @@
-name: 'flw 的工具箱'
-baseurl: ''
+name: "flw 的工具箱"
+baseurl: ""
+defaults:
+    - scope:
+        path: "/"
+        type: page
+      values:
+        layout: site
+    - scope:
+        path: ""
+        type: post
+      values:
+        layout: article

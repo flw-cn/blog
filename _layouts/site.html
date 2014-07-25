@@ -1,39 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
-        <link rel="stylesheet" href="/css/jumbotron-narrow.css" />
-        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="/">首页</a></li>
-                    <li><a href="http://github.com/flw-cn">GitHub</a></li>
-                    <li><a href="/about.html">关于</a></li>
-                </ul>
-                <h3 class="text-muted">{{ site.name }}</h3>
-            </div>
-            <h1 class="text-muted">{{ page.title }}</h1>
-            {{ content }}
-            <div class="footer">
-                <p>&copy; flw 2014</p>
-            </div>
+<head>
+{% include header.html %}
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul class="nav nav-pills pull-right">
+                <li class="active"><a href="/">首页</a></li>
+                <li><a href="http://github.com/flw-cn">GitHub</a></li>
+                <li><a href="/about.html">关于</a></li>
+            </ul>
+            <h3 class="text-muted">{{ site.name }}</h3>
         </div>
-{% if page.script %}
-<script>
-{{ page.script }}
-</script>
-{% endfi %}
-
-        <script language="javascript" type="text/javascript" src="http://js.users.51.la/17193169.js"></script>
-        <noscript><a href="http://www.51.la/?17193169" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/17193169.asp" style="border:none" /></a></noscript>
-    </body>
+        <h1 class="text-muted">{{ page.title }}</h1>
+        <p>{{ page.date | date_to_string }}</p>
+        {{ content }}
+        {% if page.script %}
+        <script>
+        {{ page.script }}
+        </script>
+        {% endfi %}
+        {% include footer.html %}
+    </div>
+    {% include tail.html %}
+</body>
 </html>
