@@ -14,6 +14,7 @@
             <h3 class="text-muted">{{ site.name }}</h3>
         </div>
         <h1 class="text-muted">{{ page.title }}</h1>
+        <p>{{ page.date | date_to_string }}</p>
         {{ content }}
         {% include footer.html %}
     </div>
