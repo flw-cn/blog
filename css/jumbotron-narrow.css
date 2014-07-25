@@ -77,3 +77,7 @@ body {
     border-bottom: 0;
   }
 }
+
+.container blockquote {
+    font-family: 'Consolas';
+}
