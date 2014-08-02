@@ -78,7 +78,15 @@ body {
   }
 }
 
-.container blockquote {
+.container {
     font-family: 'Consolas';
+}
+
+.container blockquote {
+    font-size: 1em;
+}
+
+.container code {
+    font-family: 'Fixedsys';
     font-size: 1em;
 }
